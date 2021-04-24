@@ -5,8 +5,6 @@
 [![Docker pulls](https://img.shields.io/docker/pulls/kcalapp/kcal)](https://hub.docker.com/r/kcalapp/kcal)
 [![Docker image size](https://img.shields.io/docker/image-size/kcalapp/kcal)](https://hub.docker.com/r/kcalapp/kcal/tags?page=1&ordering=last_updated)
 
-# :construction: **WORK IN PROGRESS** :construction:
-
 This is a template repository for running [kcal](https://github.com/kcal-app/kcal)
 with Docker Compose. Visit the main [kcal](https://github.com/kcal-app/kcal) repository
 for more information about the application.
@@ -44,3 +42,8 @@ desired).
 ## 6. Create initial user.
 
     docker-compose exec app php artisan user:add --admin
+
+## 7. Log in!
+
+Navigate to [http://127.0.0.1/](http://127.0.0.1/) (or the `APP_URL`) and log in
+with the user created in the previous step.
