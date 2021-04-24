@@ -12,6 +12,8 @@ services:
       - './etc/php/php.ini:/usr/local/etc/php/conf.d/local.ini'
     networks:
       - kcal
+    depends_on:
+      - db
   web:
     image: nginx:alpine
     container_name: kcal-web
